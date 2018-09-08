@@ -37,12 +37,14 @@ public class SettingsActivity extends AppCompatActivity {
             bindSummeryToValue(orderBy, getString(R.string.order_by_default_value));
         }
 
+        /**
+         * @param preference
+         * @param defaultValue the default value is passed to avoid empty summaries
+         */
         private void bindSummeryToValue(Preference preference, String defaultValue) {
             preference.setOnPreferenceChangeListener(this);
 
-            String key = preference.getKey();
-
-            String value = mSharedPreferences.getString(key, defaultValue);
+            String value = mSharedPreferences.getString(preference.getKey(), defaultValue);
 
             onPreferenceChange(preference, value);
         }
