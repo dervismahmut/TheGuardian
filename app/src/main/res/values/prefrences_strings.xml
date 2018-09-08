@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Section ListPreference-->
+    <string name="settings_section">Section</string>
+    <string name="settings_section_key">section.key</string>
+    <string name="settings_section_default_label">Science</string>
+    <string name="settings_section_default_value">science</string>
+
+    <string-array name="settings_section_labels">
+        <item>Technology</item>
+        <item>Science</item>
+        <item>Environment</item>
+    </string-array>
+
+    <string-array name="settings_section_values">
+        <item>technology</item>
+        <item>science</item>
+        <item>environment</item>
+    </string-array>
+
+
+    <!--OrderBy ListPreference-->
+    <string name="order_by_label">Order By</string>
+    <string name="order_by_key">order.by</string>
+    <string name="order_by_default_value">newest</string>
+
+    <string-array name="order_by_labels">
+        <item>Newest</item>
+        <item>Oldest</item>
+    </string-array>
+
+    <string-array name="order_by_values">
+        <item>newest</item>
+        <item>oldest</item>
+    </string-array>
+
+
+    <!--Stories Limit EditTextPreference-->
+    <string name="settings_headlines_limit_label">Number of headlines</string>
+    <string name="settings_headlines_limit_key">headlines.number.limit.key</string>
+    <string name="settings_headlines_limit_default_value">10</string>
+</resources>
